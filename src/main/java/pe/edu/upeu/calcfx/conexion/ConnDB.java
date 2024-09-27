@@ -31,7 +31,8 @@ public class ConnDB {
             PreparedStatement ps=conx.prepareStatement("SELECT * from calculadora");
             ResultSet rs=ps.executeQuery();
             while (rs.next()) {
-                System.out.println(rs.getString("num1")+
+                System.out.println(
+                        rs.getString("num1")+
                         rs.getString("num2")+
                         rs.getString("operador")+
                         rs.getString("resultado")
